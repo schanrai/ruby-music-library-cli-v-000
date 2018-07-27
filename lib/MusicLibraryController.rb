@@ -91,6 +91,14 @@ def play_song
     puts "Playing #{song.name} by #{song.artist.name}" if song #upon receiving valid input plays the matching song from the alphabetized list output by #list_songs
   end
 
+  def search_artist_by_name
+    puts "Which artist would you like to find?"
+    input = gets.strip.to_i #turns string number from user input to integer
+    if Artist.find_by_name(input)
+      puts artist.name
+    end
+  end
+
 
 
 end
