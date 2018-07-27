@@ -94,11 +94,10 @@ def play_song
   def search_artist_by_name
     puts "Which artist would you like to find?"
     input = gets.strip.to_i #turns string number from user input to integer
-    if Artist.find_by_name(input)
-      puts artist.name
+    if artiste = Artist.find_by_name(input)
+      puts "#{artiste.name}"
     end
   end
-
 
 
 end
