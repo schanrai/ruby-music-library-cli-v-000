@@ -95,7 +95,7 @@ def play_song
     puts "Which artist would you like to find?"
     input = gets.strip#turns string number from user input to integer
     if artiste = Artist.find_by_name(input)
-      puts "#{artiste.name}"
+      puts "#{artiste}"
     end
   end
 
