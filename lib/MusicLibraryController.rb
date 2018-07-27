@@ -32,6 +32,8 @@ class MusicLibraryController
           list_songs_by_genre
         when "play song"
           play_song
+        else
+          puts "I do not understand - please check your spelling and try again"
         end
       end
   end
@@ -88,7 +90,6 @@ def play_song
     end #you have to alphabetize the list
     puts "Playing #{song.name} by #{song.artist.name}" if song #upon receiving valid input plays the matching song from the alphabetized list output by #list_songs
   end
-
 
 
 
