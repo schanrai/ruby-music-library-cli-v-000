@@ -1,4 +1,4 @@
-class MusicLibraryController
+class  
 
 
   def initialize(path = "./db/mp3s")
